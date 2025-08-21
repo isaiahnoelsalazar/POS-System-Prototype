@@ -33,13 +33,13 @@
             this.ReceiptsButton = new System.Windows.Forms.Button();
             this.SalesButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.CustomerTotal = new System.Windows.Forms.ListView();
             this.NameColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AmountColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.PriceColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
-            this.ClearButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,15 +54,15 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 673);
+            this.panel1.Size = new System.Drawing.Size(150, 547);
             this.panel1.TabIndex = 1;
             // 
             // ItemsButton
             // 
-            this.ItemsButton.Location = new System.Drawing.Point(8, 124);
-            this.ItemsButton.Margin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.ItemsButton.Location = new System.Drawing.Point(6, 101);
+            this.ItemsButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 0);
             this.ItemsButton.Name = "ItemsButton";
-            this.ItemsButton.Size = new System.Drawing.Size(184, 50);
+            this.ItemsButton.Size = new System.Drawing.Size(138, 41);
             this.ItemsButton.TabIndex = 2;
             this.ItemsButton.Text = "Items";
             this.ItemsButton.UseVisualStyleBackColor = true;
@@ -70,10 +70,10 @@
             // 
             // ReceiptsButton
             // 
-            this.ReceiptsButton.Location = new System.Drawing.Point(8, 66);
-            this.ReceiptsButton.Margin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.ReceiptsButton.Location = new System.Drawing.Point(6, 54);
+            this.ReceiptsButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 0);
             this.ReceiptsButton.Name = "ReceiptsButton";
-            this.ReceiptsButton.Size = new System.Drawing.Size(184, 50);
+            this.ReceiptsButton.Size = new System.Drawing.Size(138, 41);
             this.ReceiptsButton.TabIndex = 1;
             this.ReceiptsButton.Text = "Receipts";
             this.ReceiptsButton.UseVisualStyleBackColor = true;
@@ -81,10 +81,10 @@
             // 
             // SalesButton
             // 
-            this.SalesButton.Location = new System.Drawing.Point(8, 8);
-            this.SalesButton.Margin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.SalesButton.Location = new System.Drawing.Point(6, 6);
+            this.SalesButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 0);
             this.SalesButton.Name = "SalesButton";
-            this.SalesButton.Size = new System.Drawing.Size(184, 50);
+            this.SalesButton.Size = new System.Drawing.Size(138, 41);
             this.SalesButton.TabIndex = 0;
             this.SalesButton.Text = "Sales";
             this.SalesButton.UseVisualStyleBackColor = true;
@@ -98,20 +98,33 @@
             this.panel2.Controls.Add(this.SubmitButton);
             this.panel2.Controls.Add(this.CustomerTotal);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(962, 0);
+            this.panel2.Location = new System.Drawing.Point(722, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 673);
+            this.panel2.Size = new System.Drawing.Size(225, 547);
             this.panel2.TabIndex = 2;
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ClearButton.Location = new System.Drawing.Point(6, 453);
+            this.ClearButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 0);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(213, 41);
+            this.ClearButton.TabIndex = 4;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // SubmitButton
             // 
             this.SubmitButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SubmitButton.Location = new System.Drawing.Point(8, 615);
-            this.SubmitButton.Margin = new System.Windows.Forms.Padding(8);
+            this.SubmitButton.Location = new System.Drawing.Point(6, 500);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(284, 50);
+            this.SubmitButton.Size = new System.Drawing.Size(213, 41);
             this.SubmitButton.TabIndex = 3;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
@@ -126,10 +139,10 @@
             this.AmountColumn,
             this.PriceColumn});
             this.CustomerTotal.HideSelection = false;
-            this.CustomerTotal.Location = new System.Drawing.Point(8, 41);
-            this.CustomerTotal.Margin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.CustomerTotal.Location = new System.Drawing.Point(6, 33);
+            this.CustomerTotal.Margin = new System.Windows.Forms.Padding(6, 6, 6, 0);
             this.CustomerTotal.Name = "CustomerTotal";
-            this.CustomerTotal.Size = new System.Drawing.Size(284, 508);
+            this.CustomerTotal.Size = new System.Drawing.Size(214, 414);
             this.CustomerTotal.TabIndex = 1;
             this.CustomerTotal.UseCompatibleStateImageBehavior = false;
             this.CustomerTotal.View = System.Windows.Forms.View.Details;
@@ -137,7 +150,7 @@
             // NameColumn
             // 
             this.NameColumn.Text = "Name";
-            this.NameColumn.Width = 110;
+            this.NameColumn.Width = 90;
             // 
             // AmountColumn
             // 
@@ -148,7 +161,6 @@
             // 
             this.PriceColumn.Text = "Price";
             this.PriceColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.PriceColumn.Width = 90;
             // 
             // label1
             // 
@@ -156,37 +168,25 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 8);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 0);
+            this.label1.Location = new System.Drawing.Point(6, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 25);
+            this.label1.Size = new System.Drawing.Size(44, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Total";
             // 
-            // ClearButton
-            // 
-            this.ClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ClearButton.Location = new System.Drawing.Point(8, 557);
-            this.ClearButton.Margin = new System.Windows.Forms.Padding(8, 8, 8, 0);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(284, 50);
-            this.ClearButton.TabIndex = 4;
-            this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
-            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(946, 547);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
-            this.Padding = new System.Windows.Forms.Padding(200, 0, 300, 0);
+            this.Padding = new System.Windows.Forms.Padding(150, 0, 225, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POS System Prototype";
             this.Load += new System.EventHandler(this.MainForm_Load);
